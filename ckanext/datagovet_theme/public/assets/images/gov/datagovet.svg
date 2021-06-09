@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1600"
+   height="500"
+   version="1.1"
+   id="svg25"
+   sodipodi:docname="datagovet.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs29">
+    <rect
+       x="538.48901"
+       y="73.430321"
+       width="517.27582"
+       height="168.07384"
+       id="rect2697" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview27"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     width="1600px"
+     height="500px"
+     inkscape:zoom="0.21666667"
+     inkscape:cx="191.53846"
+     inkscape:cy="-122.30769"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg25" />
+  <text
+     xml:space="preserve"
+     id="text2695"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;white-space:pre;shape-inside:url(#rect2697);fill:#333333;fill-opacity:1;stroke:none"
+     transform="matrix(1.7702736,0,0,1.7702736,-403.99941,-80.1665)"><tspan
+       x="538.48828"
+       y="122.08728"
+       id="tspan7411">ግልጥ መረጃ
+</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:94.4145px;line-height:1.25;font-family:sans-serif;fill:#808080;fill-opacity:1;stroke:none;stroke-width:1.77027"
+     x="1002.9977"
+     y="434.79425"
+     id="text6031"><tspan
+       sodipodi:role="line"
+       x="1002.9977"
+       y="434.79425"
+       id="tspan7205"
+       style="font-size:94.4145px;fill:#808080;stroke-width:1.77027">Open Data</tspan><tspan
+       sodipodi:role="line"
+       x="1002.9977"
+       y="552.81238"
+       id="tspan7207"
+       style="font-size:94.4145px;fill:#808080;stroke-width:1.77027" /></text>
+  <path
+     style="fill:#ff2a2a;fill-opacity:1;stroke-width:0.947664"
+     id="path32886"
+     sodipodi:type="arc"
+     sodipodi:cx="222.29918"
+     sodipodi:cy="260.0239"
+     sodipodi:rx="208.93201"
+     sodipodi:ry="208.93181"
+     sodipodi:start="0.64652277"
+     sodipodi:end="3.1337477"
+     sodipodi:arc-type="slice"
+     d="M 389.06523,385.88746 A 208.93201,208.93181 0 0 1 156.70728,458.39277 208.93201,208.93181 0 0 1 13.373601,261.66294 L 222.29918,260.0239 Z" />
+  <path
+     style="fill:#008000;fill-opacity:1;stroke-width:0.947664"
+     id="path32886-4-1"
+     sodipodi:type="arc"
+     sodipodi:cx="222.29918"
+     sodipodi:cy="260.0239"
+     sodipodi:rx="208.93201"
+     sodipodi:ry="208.93181"
+     sodipodi:start="3.1319479"
+     sodipodi:end="5.5932952"
+     sodipodi:arc-type="slice"
+     d="M 13.37689,262.03896 A 208.93201,208.93181 0 0 1 150.7025,63.742399 208.93201,208.93181 0 0 1 383.45177,127.04874 L 222.29918,260.0239 Z" />
+  <path
+     style="fill:#fcdd09;fill-opacity:1;stroke-width:0.947664"
+     id="path32886-4"
+     sodipodi:type="arc"
+     sodipodi:cx="222.29918"
+     sodipodi:cy="260.0239"
+     sodipodi:rx="208.93181"
+     sodipodi:ry="208.93181"
+     sodipodi:start="2.0737848"
+     sodipodi:end="4.1952525"
+     sodipodi:arc-type="slice"
+     d="M 121.58443,443.07864 A 208.93181,208.93181 0 0 1 13.372598,261.50187 208.93181,208.93181 0 0 1 119.00474,78.412335 L 222.29918,260.0239 Z" />
+  <path
+     style="fill:#f9f9f9;stroke-width:0.918411"
+     id="path1949"
+     sodipodi:type="arc"
+     sodipodi:cx="221.1382"
+     sodipodi:cy="259.46155"
+     sodipodi:rx="189.92899"
+     sodipodi:ry="189.92899"
+     sodipodi:start="0.36507045"
+     sodipodi:end="5.8548294"
+     sodipodi:arc-type="slice"
+     d="M 398.5506,327.26906 A 189.92899,189.92899 0 0 1 189.62088,446.75724 189.92899,189.92899 0 0 1 31.30429,265.47042 189.92899,189.92899 0 0 1 177.83879,74.534048 189.92899,189.92899 0 0 1 393.90708,180.56964 L 221.1382,259.46155 Z" />
+  <g
+     transform="matrix(1.3629571,0,0,1.3629571,222.46154,259.15385)"
+     id="g23">
+    <circle
+       r="120"
+       fill="#0f47af"
+       id="circle8"
+       cx="0"
+       cy="0" />
+    <g
+       id="a">
+      <path
+         d="m 0,-96 -4.205849,12.944272 17.347494,53.390097 H -9.987258 l -2.599358,8 h 74.162668 l 11.011056,-8 H 21.553343 Z"
+         fill="#fcdd09"
+         id="path10" />
+      <path
+         d="M 0,44 V 96"
+         transform="rotate(-144)"
+         stroke="#fcdd09"
+         stroke-width="4"
+         id="path12" />
+    </g>
+    <use
+       xlink:href="#a"
+       transform="rotate(72)"
+       width="100%"
+       height="100%"
+       id="use15"
+       x="0"
+       y="0" />
+    <use
+       xlink:href="#a"
+       transform="rotate(144)"
+       width="100%"
+       height="100%"
+       id="use17"
+       x="0"
+       y="0" />
+    <use
+       xlink:href="#a"
+       transform="rotate(-144)"
+       width="100%"
+       height="100%"
+       id="use19"
+       x="0"
+       y="0" />
+    <use
+       xlink:href="#a"
+       transform="rotate(-72)"
+       width="100%"
+       height="100%"
+       id="use21"
+       x="0"
+       y="0" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:236.036px;line-height:1.25;font-family:sans-serif;fill:#0f47af;fill-opacity:1;stroke:#ffffff;stroke-width:35;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+     x="355.08334"
+     y="316.37161"
+     id="text9245"><tspan
+       sodipodi:role="line"
+       x="355.08334"
+       y="316.37161"
+       id="tspan9247"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:236.036px;font-family:'Segoe UI Symbol';-inkscape-font-specification:'Segoe UI Symbol';fill:#0f47af;fill-opacity:1;stroke:#ffffff;stroke-width:35;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill">data.gov.et</tspan></text>
+</svg>

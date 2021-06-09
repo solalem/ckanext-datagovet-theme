@@ -1,0 +1,71 @@
+{# Contact Page #}
+
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _('Contact') }}{% endblock %}
+
+{% block breadcrumb_content %}
+<li class="active"><a href="">{{ _('Contact') }}</a></li>
+{% endblock %}
+
+{% block primary %}
+<div style="padding:10px">
+    
+    <div class="row">
+    
+        <div class="col-md-9 col-sm-9">
+            <iframe
+                src="https://maps.google.ro/maps?f=q&amp;source=s_q&amp;hl=ro&amp;geocode=&amp;q=Guvernul+Rom%C3%A2niei,+Pia%C8%9Ba+Victoriei,+Bucure%C8%99ti,+Bucure%C5%9Fti&amp;aq=0&amp;oq=guvernul+ro&amp;sll=44.4383,26.095222&amp;sspn=0.281904,0.617294&amp;ie=UTF8&amp;hq=Guvernul+Rom%C3%A2niei,&amp;hnear=Pia%C5%A3a+Victoriei,+Bulevardul+Lasc%C4%83r+Catargiu,+Sector+1,+Bucure%C8%99ti,+Bucure%C5%9Fti&amp;t=m&amp;ll=44.452868,26.087487&amp;spn=0.004595,0.012896&amp;z=18&amp;iwloc=near&amp;output=embed"
+                height="484" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+            </iframe>
+    
+        </div>
+    
+        <!-- INFO -->
+        <div class="col-md-3 col-sm-3">
+    
+            <h2><a href="https://www.gov.ro" target="_blank"><strong>Guvernul României</strong></a></h2>
+    
+            <hr />
+    
+            <p>
+                <span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> Piața Victoriei nr.1, Sector 1, București</span><br>
+                <span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:+40213143400">+40 21 314 3400</a></span><br>
+                <span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:+40213191564">+40 21 319 1564</a></span><br>
+                <span class="block"><strong><i class="fa fa-envelope"></i> Email (Administrare Portal):</strong><br>
+                    <a href="mailto:online@gov.ro">online@gov.ro</a></span>
+                <!-- Bordered Large -->
+                <a href="/contact-us" class="btn btn-lg btn-default btn-bordered btn-block">
+                    <i class="et-megaphone"></i>
+                    <span>FORMULAR CONTACT</span>
+                </a>
+            </p>
+    
+            <hr />
+    
+            <h4 class="font300">Facebook</h4>
+            <p>
+                <iframe style="border: none; overflow: hidden; width: 240px; height: 200px;"
+                        src="//www.facebook.com/plugins/likebox.php?locale=ro_RO&amp;href=http%3A%2F%2Fwww.facebook.com%2Fguv.ro&amp;width=240&amp;height=200&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;appId=320979451285677"
+                        height="240" width="320" frameborder="0" scrolling="no"></iframe>
+            </p>
+            <!-- <h4 class="font300">Twitter</h4>
+            <p>
+                <iframe id="twitter-widget-0" class="twitter-timeline twitter-timeline-rendered" scrolling="no" frameborder="0"
+                    allowtransparency="true" title="Twitter Timeline Widget" style="border: none; max-width: 100%; min-width: 180px;"
+                    width="240" height="200"></iframe>
+            </p> -->
+    
+        </div>
+        <!-- /INFO -->
+    
+    </div>
+
+    <div class="clear"></div>
+
+</div>
+{% endblock %}
+
+{% block secondary %}
+
+{% endblock %}

@@ -1,0 +1,79 @@
+{% set stats = h.get_site_statistics() %}
+{% set tags = h.get_facet_items_dict('tags', limit=5) %}
+{% set placeholder = _('E.g. environment') %}
+
+<section class="padding-xlg" style="background-image: url('/assets/images/gov/wall5.jpg');">
+    <div class="container">
+
+        <header class="text-center margin-bottom-40">
+            <h1 class="weight-300" style="color:#f5f5f5">{% trans %}Start searching in DATA.GOV.ET{% endtrans %}</h1>
+            
+            <h2 class="weight-300 letter-spacing-1 size-13"><span>{% trans %}Search in more than 1700 datasets{% endtrans %}</span></h2>
+        </header>
+
+        <form class="clearfix well well-sm search-big nomargin" method="get" action="{% url_for controller='dataset', action='search' %}">
+            <!-- <h3 class="heading">{{ _("Search data") }}</h3> -->
+
+            <!-- <div class="search-input form-group search-giant">
+                <input aria-label="{% block header_site_search_label %}{{ _('Search datasets') }}{% endblock %}" id="field-main-search" type="text" class="form-control" name="q" value="" autocomplete="off" placeholder="{% block search_placeholder %}{{ placeholder }}{% endblock %}" />
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                    <span class="sr-only">{{ _('Search') }}</span>
+                </button>
+            </div> -->
+
+            <div class="input-group">
+            
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default input-lg dropdown-toggle noborder-right" data-toggle="dropdown">
+                        {% trans %}All Domains{% endtrans %} <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="active">
+                            <a href="#"><i class="fa fa-check"></i> {% trans %}All Domains{% endtrans %}</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="/group/finante">Economie și Finanțe</a>
+                        </li>
+                        <li>
+                            <a href="/group/agricultura-silvicultura-si-pescuit">Agricultura</a>
+                        </li>
+                        <li>
+                            <a href="/group/drept">Justiție</a>
+                        </li>
+                        <li>
+                            <a href="/group/nomenclatoare">Nomenclatoare</a>
+                        </li>
+                        <li>
+                            <a href="/group/transport">Transport</a>
+                        </li>
+                        <li>
+                            <a href="/group/poitica">Guvernare</a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <input name="q" id="field-main-search" class="form-control input-lg" type="text" placeholder="{% trans %}Search in all datasets ...{% endtrans %}">
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default input-lg noborder-left">
+                        <i class="fa fa-search fa-lg nopadding"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        
+        <!-- TAGS -->
+        <div class="margin-top-10">
+            {% for tag in tags %}
+            <a class="tag_under_search" href="{% url_for controller='dataset', action='search', tags=tag.name %}">
+                <span class="txt">{{ h.truncate(tag.display_name, 22) }}</span>
+                <span class="num">{{ tag.count }}</span>
+            </a>
+            {% endfor %}
+        </div>
+
+
+    </div>
+</section>
+<!-- /TAGS -->

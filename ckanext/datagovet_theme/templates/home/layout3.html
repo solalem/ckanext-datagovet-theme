@@ -1,5 +1,25 @@
-{% ckan_extends %}
-
-{% block promoted %}
-  {{ h.recently_changed_packages_activity_stream(limit=4) }}
+{% block search %}
+{% snippet 'home/snippets/search.html' %}
 {% endblock %}
+
+{% block infobar %}
+{% snippet 'home/snippets/infobar.html' %}
+{% endblock %}
+
+{% block datarequest %}
+{% snippet 'home/snippets/request.html' %}
+{% endblock %}
+
+{% block groups_block %}
+{% snippet 'home/snippets/groups_block.html' %}
+{% endblock %}
+
+{% block resouces %}
+{% snippet 'home/snippets/resources.html' %}
+{% endblock %}
+
+{% block newsfeed %}
+{% snippet 'home/snippets/newsfeed.html' %}
+{% endblock %}
+
+

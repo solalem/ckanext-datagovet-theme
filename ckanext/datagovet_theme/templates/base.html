@@ -1,0 +1,22 @@
+{% ckan_extends %}
+
+{% block styles %}
+    {{ super() }}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Titillium+Web&display=swap" rel="stylesheet">
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+    <link href="/assets/css/datagovet.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/mycss.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/header-1.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{%- block page %}
+{{ super() }}
+{% snippet 'snippets/sidenav.html' %}
+{% endblock -%}
+
+{%- block scripts %}
+{{ super() }}
+<script type="text/javascript">var plugin_path = '/assets/plugins/';</script>
+<script type="text/javascript" src="/assets/plugins/jquery/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="/assets/js/scripts.js"></script>
+{% endblock -%}

@@ -6,9 +6,3 @@
 #   extra:
 #     preload:
 #       - base/main
-
-# datagovet_theme-css:
-#   filter: cssrewrite
-#   output: ckanext-datagovet_theme/%(version)s-datagovet_theme.css
-#   contents:
-#     - css/datagovet_theme.css

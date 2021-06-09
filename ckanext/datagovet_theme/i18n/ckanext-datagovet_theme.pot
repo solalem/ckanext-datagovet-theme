@@ -1,0 +1,463 @@
+# Translations template for ckanext-datagovro_theme.
+# Copyright (C) 2020 ORGANIZATION
+# This file is distributed under the same license as the ckanext-datagovro_theme
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-datagovro_theme 0.0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2020-03-05 07:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ckanext/datagovro_theme/templates/contact.html:5
+#: ckanext/datagovro_theme/templates/contact.html:8
+msgid "Contact"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/cookie.html:10
+#: ckanext/datagovro_theme/templates/termeni.html:10
+#: ckanext/datagovro_theme/templates/termeni.html:13
+msgid "Terms and conditions for the portal"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/cookie.html:13
+#: ckanext/datagovro_theme/templates/footer.html:6
+#: ckanext/datagovro_theme/templates/footer_home.html:13
+msgid "Cookies"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/footer.html:5
+#: ckanext/datagovro_theme/templates/footer_home.html:12
+msgid "Terms and conditions"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/footer.html:7
+#: ckanext/datagovro_theme/templates/footer_home.html:15
+msgid "CKAN API"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/footer.html:8
+msgid "Open Knowledge Foundation"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/footer.html:9
+msgid "Open Source on Github"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/footer.html:10
+msgid "Statistics"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/datagovro_theme/ga.html:5
+#: ckanext/datagovro_theme/templates/datagovro_theme/ga.html:8
+#: ckanext/datagovro_theme/templates/datagovro_theme/ga.html:14
+#: ckanext/datagovro_theme/templates/footer.html:11
+msgid "Traffic Statistics"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/footer_home.html:9
+msgid "About {0}"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/footer_home.html:16
+msgid "CKAN Association"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/footer_home.html:25
+msgid ""
+"<strong>Powered by</strong> <a class=\"hide-text ckan-footer-logo\" "
+"href=\"http://ckan.org\">CKAN</a>"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:11
+msgid "Sysadmin settings"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:13
+msgid "Admin"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:18
+msgid "View profile"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:25
+#, python-format
+msgid "Dashboard (%(num)d new item)"
+msgid_plural "Dashboard (%(num)d new items)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datagovro_theme/templates/header.html:29
+msgid "Dashboard"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:35
+msgid "Edit settings"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:37
+msgid "Settings"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:42
+#: ckanext/datagovro_theme/templates/header.html:44
+msgid "Log out"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:59
+#: ckanext/datagovro_theme/templates/header_old.html:4
+msgid "Log in"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:61
+msgid "Register"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:97
+#: ckanext/datagovro_theme/templates/header.html:99
+#: ckanext/datagovro_theme/templates/home/snippets/search.html:21
+msgid "Search"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:121
+#: ckanext/datagovro_theme/templates/header_old.html:9
+#: ckanext/datagovro_theme/templates/home/snippets/infobar.html:8
+#: ckanext/datagovro_theme/templates/package/search.html:4
+msgid "Datasets"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:122
+#: ckanext/datagovro_theme/templates/header_old.html:10
+#: ckanext/datagovro_theme/templates/home/snippets/infobar.html:18
+msgid "Organizations"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:124
+msgid "News"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:126
+#: ckanext/datagovro_theme/templates/header_old.html:14
+msgid "Showcase"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header.html:127
+msgid "Resources"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/header_old.html:11
+#: ckanext/datagovro_theme/templates/home/snippets/infobar.html:23
+msgid "Groups"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/page_home.html:6
+msgid "Skip to content"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/admin/config.html:11
+msgid "Disallowed extensions"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/admin/config.html:13
+msgid "Allowed extensions"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/index.html:4
+msgid "Welcome"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/groups.html:6
+#: ckanext/datagovro_theme/templates/home/snippets/groups_block.html:7
+msgid "OPEN DATASETS PORTAL"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/groups.html:11
+#: ckanext/datagovro_theme/templates/home/snippets/groups_block.html:13
+msgid ""
+"Central access point for open data sets delivered by public administration "
+"authorities and institutions, helping the public to find, download and use "
+"the information generated and held by the administrative structures."
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/infobar.html:13
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:16
+msgid "related items"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/infobar.html:28
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:34
+msgid "external links"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/search.html:3
+msgid "E.g. environment"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/search.html:9
+msgid "Start searching in data.gov.et"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/search.html:11
+msgid "Search in more than 1600 datasets"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/search.html:15
+msgid "Search data"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/search.html:18
+#: ckanext/datagovro_theme/templates/snippets/search_form.html:3
+msgid "Search datasets"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/search.html:29
+#: ckanext/datagovro_theme/templates/home/snippets/search.html:33
+msgid "All Domains"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/search.html:51
+msgid "Search in all datasets ..."
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:5
+msgid "{0} statistics"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:10
+msgid "dataset"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:10
+msgid "datasets"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:16
+msgid "related item"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:22
+msgid "organization"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:22
+msgid "organizations"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:28
+msgid "group"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:28
+msgid "groups"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/home/snippets/stats.html:34
+msgid "link"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/search.html:28
+msgid "Relevance"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/search.html:29
+#: ckanext/datagovro_theme/templates/snippets/search_form.html:4
+msgid "Name Ascending"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/search.html:30
+#: ckanext/datagovro_theme/templates/snippets/search_form.html:4
+msgid "Name Descending"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/search.html:31
+msgid "Last Modified"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/search.html:32
+msgid "Popular"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/search.html:49
+msgid "API"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/search.html:50
+msgid "API Docs"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/search.html:52
+msgid "full {format} dump"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/search.html:53
+#, python-format
+msgid ""
+" You can also access this registry using the %(api_link)s (see "
+"%(api_doc_link)s) or download a %(dump_link)s. "
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/search.html:57
+#, python-format
+msgid ""
+" You can also access this registry using the %(api_link)s (see "
+"%(api_doc_link)s). "
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:4
+msgid "Title"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:4
+msgid "eg. A descriptive title"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:13
+msgid "URL"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:13
+msgid "eg. my-dataset"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:19
+msgid "Description"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:19
+msgid "eg. Some useful notes about the data"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:24
+msgid "Tags"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:24
+msgid "eg. economy, mental health, government"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:30
+msgid "License"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:40
+msgid ""
+" License definitions and additional information can be found at <a "
+"href=\"http://opendefinition.org/licenses/\">opendefinition.org</a> "
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:69
+msgid "Organization"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:73
+msgid "No organization"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:88
+msgid "Visibility"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:91
+msgid "Private"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:91
+msgid "Public"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:107
+msgid "State"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:110
+msgid "Active"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_basic_fields.html:111
+msgid "Deleted"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:7
+msgid "Version"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:7
+msgid "1.0"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:11
+msgid "Author"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:11
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:17
+msgid "Joe Bloggs"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:13
+msgid "Author Email"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:13
+msgid "joe@example.com"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/package_metadata_fields.html:17
+msgid "Maintainer"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/resources_list.html:13
+msgid "Data and Resources"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/resources_list.html:55
+#, python-format
+msgid ""
+" <p class=\"empty\">This dataset has no data, <a href=\"%(url)s\">why not add"
+" some?</a></p> "
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/package/snippets/resources_list.html:59
+msgid "This dataset has no data"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/snippets/license.html:8
+msgid "No License Provided"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/snippets/search_form.html:37
+msgid "Order by"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/snippets/search_form.html:47
+msgid "Go"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/snippets/search_form.html:74
+msgid "Remove"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/snippets/search_form.html:80
+msgid "Filter Results"
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/snippets/search_form.html:87
+msgid " <p class=\"extra\">Please try another search.</p> "
+msgstr ""
+
+#: ckanext/datagovro_theme/templates/snippets/search_form.html:93
+msgid ""
+" <p id=\"search-error\"><strong>There was an error while searching.</strong> "
+"Please try again.</p> "
+msgstr ""
+

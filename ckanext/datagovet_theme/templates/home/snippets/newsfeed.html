@@ -1,0 +1,43 @@
+{# 
+    
+    Display last 4 news 
+
+#}
+
+{% set posts = h.get_recent_blog_posts(number=4) %}
+
+<!-- ARTICLES -->
+<section class="alternate padding-xs">
+    <div class="container">
+        <header class="text-center margin-bottom-40">
+            <h1 class="weight-300">News</h1>
+        </header>
+        <div class="row">
+            {% for post in posts %}
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail img-hover">
+                    <a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">
+                        {% if post.image %}
+                        <img class="img-responsive" src="{{ post.image }}" alt="" />
+                        {% else %}
+                        <img class="img-responsive" src="assets/images/gov/bannersmall1.png" alt="" />
+                        {% endif %}
+                    </a>
+                    <h5 class="text-left margin-top-20"><a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a></h5>
+                    <p class="text-left size-14">{{ h.markdown_extract(post.content) }}</p>
+                    {% if post.publish_date %}
+                    <ul class="text-left size-12 list-inline list-separator">
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            {{ h.render_datetime(post.publish_date) }}
+                        </li>
+                    </ul>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+<!-- /ARTICLES -->

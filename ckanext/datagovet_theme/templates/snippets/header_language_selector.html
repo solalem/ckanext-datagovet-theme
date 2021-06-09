@@ -1,0 +1,15 @@
+{% set current_lang = request.environ.CKAN_LANG %}
+
+<li>
+    {% for locale in h.get_available_locales() %}
+    {% if locale.identifier == current_lang %}
+    <a class="dropdown-toggle no-text-underline" data-toggle="dropdown" href="#"><img class="flag-lang" src="/assets/images/flags/{{ locale.short_name[0:2] }}.png" width="16" height="11" alt="lang" /> {{ locale.display_name or locale.english_name }}</a>
+    {% endif %}
+    {% endfor %}
+    <ul class="dropdown-langs dropdown-menu">
+        {% for locale in h.get_available_locales() %}
+        <li><a tabindex="-1" href="{% url_for h.current_url(), locale=locale.short_name %}"><img class="flag-lang" src="/assets/images/flags/{{ locale.short_name[0:2] }}.png" width="16" height="11" alt="lang" /> {{ locale.display_name or locale.english_name }}</a></li>
+        <li class="divider"></li>
+        {% endfor %}
+    </ul>
+</li>
