@@ -72,6 +72,7 @@
       {% endblock %}
     #}
   {%- block styles %}
+    {{ super() }}
     {% asset g.main_css[6:] %}
     <!-- <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
@@ -86,7 +87,6 @@
     <link href="/assets/css/layout.css" rel="stylesheet" type="text/css" />  
     <!-- PAGE LEVEL SCRIPTS -->
     <!-- <link href="/assets/css/color_scheme/darkblue.css" rel="stylesheet" type="text/css" id="color_scheme" /> -->
-    {{ super() }}
   {% endblock %}
 
   {% block head_extras %}
@@ -94,13 +94,6 @@
     {{ g.template_head_end | safe }}
   {% endblock %}
 
-  {%- block custom_styles %}
-  {%- if g.site_custom_css -%}
-  <style>
-    {{ g.site_custom_css | safe }}
-  </style>
-  {%- endif %}
-  {% endblock %}
   </head>
 
   {# Allows custom attributes to be added to the <body> tag #}

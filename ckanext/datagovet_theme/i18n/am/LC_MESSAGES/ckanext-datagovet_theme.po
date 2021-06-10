@@ -153,8 +153,8 @@ msgstr ""
 
 #: ckanext/datagovet_theme/templates/header.html:125
 #: ckanext/datagovet_theme/templates/header_old.html:14
-msgid "Showcase"
-msgstr "ማሳያ"
+msgid "Programmers"
+msgstr "ዴቨሎፐሮች"
 
 #: ckanext/datagovet_theme/templates/header.html:126
 msgid "Resources"
@@ -477,9 +477,9 @@ msgid ""
 "strong> Please try again.</p> "
 msgstr ""
 
-# | msgid "Showcase"
-#~ msgid "Showcases"
-#~ msgstr "ማሳያ"
+# | msgid "Programmer"
+#~ msgid "Programmers"
+#~ msgstr "ዴቨሎፐር"
 
 # | msgid "external links"
 #~ msgid "External Links"

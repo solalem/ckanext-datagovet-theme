@@ -403,19 +403,6 @@ section.dark.page-header ul.page-options a {
 	#header li.search {
 		display:inline-block;
 	}
-	#header li.search .search-box {
-		display:none;
-		right: 0;
-		left:auto;
-		top: 100%;
-		padding: 15px;
-		background-color: #fff;
-		position: absolute;
-		box-shadow: 5px 5px rgba(91, 91, 91, 0.2);
-		width: 274px;
-		margin-top: 36px;
-		z-index: 22;
-	}
 	#header.header-md li.search .search-box {
 		margin-top:25px;
 	}

@@ -1,12 +1,15 @@
 {% ckan_extends %}
 
 {% block styles %}
+    <link href="/assets/css/datagovet.css" rel="stylesheet" type="text/css" />
     {{ super() }}
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Titillium+Web&display=swap" rel="stylesheet">
-    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
-    <link href="/assets/css/datagovet.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block custom_styles %}
     <link href="/assets/css/mycss.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/header-1.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/datagovet.css" rel="stylesheet" type="text/css" />
 {% endblock %}
 
 {%- block page %}
