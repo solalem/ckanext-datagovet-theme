@@ -44,9 +44,12 @@ To install ckanext-datagovet-theme:
 2. Clone the source and install it on the virtualenv
 
     git clone https://github.com/solalem/ckanext-datagovet-theme.git
+    
     cd ckanext-datagovet-theme
+    
     pip install -e .
-	pip install -r requirements.txt
+    
+    pip install -r requirements.txt
 
 3. Add `datagovet-theme` to the `ckan.plugins` setting in your CKAN
    config file (by default the config file is located at
@@ -54,7 +57,7 @@ To install ckanext-datagovet-theme:
 
 4. Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu:
 
-     sudo service apache2 reload
+     sudo service apache2 reload # or sudo service jetty9 restart
 
 
 ## Config settings
