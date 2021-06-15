@@ -3,60 +3,48 @@
 <section class="info-bar info-bar-clean">
     <div class="row">
 
-        <div class="col-xs-6 col-sm-5th">
-            <div class="col-xs-6 col-sm-5th">
-                <h2 class="icon ico-category fa fa-copy"></h2>
+        <div class="col-md-3 col-sm-6">
+            <div class="col-md-6 col-sm-12">
+                <h2 class="icon ico-category fa fa-copy" style="color:#59BA41"></h2>
             </div>
-            <div class="col-xs-6 col-sm-5th">
-                <span class="countTo" data-speed="3000" style="color:#59BA41">{{ stats.dataset_count }}</span>
+            <div class="col-md-6 col-sm-12">
+                <span class="countTo" data-speed="3000">{{ stats.dataset_count }}</span>
                 <p>
                     {{ _('Datasets') }}
                 </p>
             </div>
         </div>
 
-        <div class="col-xs-6 col-sm-5th">
-            <div class="col-xs-6 col-sm-5th">
-                <h2 class="icon ico-category fa fa-link"></h2>
+        <div class="col-md-3 col-sm-6">
+            <div class="col-md-6 col-sm-12">
+                <h2 class="icon ico-category fa fa-building-o" style="color:#C02942"></h2>
             </div>
-            <div class="col-xs-6 col-sm-5th">
-                <span class="countTo" data-speed="3000" style="color:#774F38">{{ h.get_number_of_files() }}</span>
-                <p>
-                    {{ _('related items') }}
-                </p>
-            </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-5th">
-            <div class="col-xs-6 col-sm-5th">
-                <h2 class="icon ico-category fa fa-building-o"></h2>
-            </div>
-            <div class="col-xs-6 col-sm-5th">
-                <span class="countTo" data-speed="3000" style="color:#C02942">{{ h.SI_number_span(stats.organization_count) }}</span>
+            <div class="col-md-6 col-sm-12">
+                <span class="countTo" data-speed="3000">{{ h.SI_number_span(stats.organization_count) }}</span>
                 <p>
                     {{ _('Organizations') }}
                 </p>
             </div>
         </div>
 
-        <div class="col-xs-6 col-sm-5th">
-            <div class="col-xs-6 col-sm-5th">
-                <h2 class="icon ico-category fa fa-object-group"></h2>
+        <div class="col-md-3 col-sm-6">
+            <div class="col-md-6 col-sm-12">
+                <h2 class="icon ico-category fa fa-object-group" style="color:#C02942"></h2>
             </div>
-            <div class="col-xs-6 col-sm-5th">
-                <span class="countTo" data-speed="3000" style="color:#C02942">{{ h.SI_number_span(stats.group_count) }}</span>
+            <div class="col-md-6 col-sm-12">
+                <span class="countTo" data-speed="3000">{{ h.SI_number_span(stats.group_count) }}</span>
                 <p>
                     {{ _('Groups') }}
                 </p>
             </div>
         </div>
 
-        <div class="col-xs-6 col-sm-5th">
-            <div class="col-xs-6 col-sm-5th">
-                <h2 class="icon ico-category et-global"></h2>
+        <div class="col-md-3 col-sm-6">
+            <div class="col-md-6 col-sm-12">
+                <h2 class="icon ico-category et-global" style="color:#1693A5"></h2>
             </div>
-            <div class="col-xs-6 col-sm-5th">
-                <span class="countTo" data-speed="3000" style="color:#1693A5">{{ h.get_number_of_external_links() }}</span>
+            <div class="col-md-6 col-sm-12">
+                <span class="countTo" data-speed="3000">{{ h.get_number_of_external_links() }}</span>
                 <p>
                     {{ _('external links') }}
                 </p>

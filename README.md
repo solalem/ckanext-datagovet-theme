@@ -51,7 +51,7 @@ To install ckanext-datagovet-theme:
     
     pip install -r requirements.txt
 
-3. Add `datagovet-theme` to the `ckan.plugins` setting in your CKAN
+3. Add `datagovet_theme` to the `ckan.plugins` setting in your CKAN
    config file (by default the config file is located at
    `/etc/ckan/default/ckan.ini`).
 
