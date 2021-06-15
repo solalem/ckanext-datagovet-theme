@@ -101,8 +101,8 @@
                     options: {
                         message: "This website uses cookies to ensure you get the best experience on our website. ",
                         dismiss: "Got it!",
-                        learnMore: " Detalii",
-                        link: "http://gov.ro/ro/conditii-de-utilizare",
+                        learnMore: " Details",
+                        link: "http://data.gov.et/terms",
                         container: null,
                         theme: "light-floating"
                     },
