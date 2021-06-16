@@ -2,13 +2,11 @@
 
 # ckanext-datagovet-theme
 
-**TODO:** Put a description of your extension here:  What does it do? What features does it have? Consider including some screenshots or embedding a video!
+[ Based largely on [DataGovRo](https://github.com/john21ro/ckanext-datagovro_theme) repo. ]
 
+Main CKAN extension theme for data.gov.et portal.
 
 ## Requirements
-
-**TODO:** For example, you might want to mention here which versions of CKAN this
-extension works with.
 
 If your extension works across different versions you can add the following table:
 
@@ -16,10 +14,10 @@ Compatibility with core CKAN versions:
 
 | CKAN version    | Compatible?   |
 | --------------- | ------------- |
-| 2.6 and earlier | not tested    |
+| 2.6 and earlier | no            |
 | 2.7             | not tested    |
 | 2.8             | not tested    |
-| 2.9             | not tested    |
+| 2.9             | yes           |
 
 Suggested values:
 
@@ -31,10 +29,6 @@ Suggested values:
 
 ## Installation
 
-**TODO:** Add any additional install steps to the list below.
-   For example installing any non-Python dependencies or adding any required
-   config settings.
-
 To install ckanext-datagovet-theme:
 
 1. Activate your CKAN virtual environment, for example:
@@ -43,13 +37,12 @@ To install ckanext-datagovet-theme:
 
 2. Clone the source and install it on the virtualenv
 
+    ```
     git clone https://github.com/solalem/ckanext-datagovet-theme.git
-    
     cd ckanext-datagovet-theme
-    
     pip install -e .
-    
     pip install -r requirements.txt
+    ```
 
 3. Add `datagovet_theme` to the `ckan.plugins` setting in your CKAN
    config file (by default the config file is located at
@@ -57,30 +50,26 @@ To install ckanext-datagovet-theme:
 
 4. Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu:
 
-     sudo service apache2 reload # or sudo service jetty9 restart
-
+    ```sudo service apache2 reload```
+    
+    or for jetty
+    
+    ```sudo service jetty9 restart```
 
 ## Config settings
 
 None at present
 
-**TODO:** Document any optional config settings here. For example:
-
-	# The minimum number of hours to wait before re-checking a resource
-	# (optional, default: 24).
-	ckanext.datagovet_theme.some_setting = some_default_value
-
-
 ## Developer installation
 
 To install ckanext-datagovet-theme for development, activate your CKAN virtualenv and
 do:
-
+    ```
     git clone https://github.com/solalem/ckanext-datagovet-theme.git
     cd ckanext-datagovet-theme
     python setup.py develop
     pip install -r dev-requirements.txt
-
+    ```
 
 ## Tests
 

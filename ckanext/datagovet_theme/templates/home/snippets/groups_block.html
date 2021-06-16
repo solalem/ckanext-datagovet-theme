@@ -17,15 +17,12 @@
         <div class="row">
             {% for group in h.datagovet_theme_most_popular_groups() %}
             <div class="col-md-2 col-xs-6">
-                <div class="text-center">
-                    <a href="{{ h.url_for(controller='group', action='read', id=group.name) }}" data-toggle="tooltip"
-                        data-placement="bottom" title="{{ group.display_name | upper }}">
-                        <img src="/assets/images/gov/icons/{{ group.name }}.png"
-                            onmouseover="this.src='/assets/images/gov/icons/{{ group.name }}-o.png'"
-                            onmouseout="this.src='/assets/images/gov/icons/{{ group.name }}.png'" alt="{{ group.display_name | upper }}"
-                            height="50" />
+                <div class="image">
+                    <a href="{{ group.url }}">
+                        <img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" width="190" height="118" alt="{{ group.name }}" />
                     </a>
                     <h4>{{ group.display_name.split(' ', 1)[0].replace(",", "") | upper }}</h4>
+                    <span class="">{{ group.package_count }} Datasets</span>
                 </div>
             </div>
             {% endfor %}
