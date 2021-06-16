@@ -153,7 +153,7 @@ msgstr ""
 
 #: ckanext/datagovet_theme/templates/header.html:125
 #: ckanext/datagovet_theme/templates/header_old.html:14
-msgid "Programmers"
+msgid "Developers"
 msgstr "ዴቨሎፐሮች"
 
 #: ckanext/datagovet_theme/templates/header.html:126
@@ -194,7 +194,7 @@ msgid ""
 "download and use the information generated and held by the "
 "administrative structures."
 msgstr ""
-"ዜጎች በተለያዩ መስሪያ ቢቶች ውስጥ የሚተዳደሩ መረጃዎችን እንዲያገኙ እና እንዲጠቀሙ የሚያግዝ "
+"ዜጎች በተለያዩ መስሪያ ቤቶች ውስጥ የሚተዳደሩ መረጃዎችን እንዲያገኙ እና እንዲጠቀሙ የሚያግዝ "
 "የመንግስት አስተዳደራዊ እና ድርጅታዊ መረጃዎች በዳታሴት መልኩ ማግኛ ስፍራ "
 
 #: ckanext/datagovet_theme/templates/home/snippets/infobar.html:13
@@ -477,8 +477,8 @@ msgid ""
 "strong> Please try again.</p> "
 msgstr ""
 
-# | msgid "Programmer"
-#~ msgid "Programmers"
+# | msgid "Developer"
+#~ msgid "Developers"
 #~ msgstr "ዴቨሎፐር"
 
 # | msgid "external links"

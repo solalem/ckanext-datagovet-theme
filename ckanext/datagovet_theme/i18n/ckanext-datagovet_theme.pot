@@ -148,7 +148,7 @@ msgstr ""
 
 #: ckanext/datagovro_theme/templates/header.html:126
 #: ckanext/datagovro_theme/templates/header_old.html:14
-msgid "Programmers"
+msgid "Developers"
 msgstr ""
 
 #: ckanext/datagovro_theme/templates/header.html:127
