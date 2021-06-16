@@ -16,14 +16,18 @@
             {% for post in posts %}
             <div class="col-sm-6 col-md-3">
                 <div class="thumbnail img-hover">
-                    <a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">
+
+                    <a href="{{ h.url_for('pages.blog_show', page='/' + post.name) }}">
                         {% if post.image %}
                         <img class="img-responsive" src="{{ post.image }}" alt="" />
                         {% else %}
-                        <img class="img-responsive" src="assets/images/gov/bannersmall1.png" alt="" />
+                        <img class="img-responsive" src="assets/images/No-image-available.png" alt="" />
                         {% endif %}
                     </a>
-                    <h5 class="text-left margin-top-20"><a href="{{ h.url_for(controller='ckanext.pages.controller:PagesController', action='blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a></h5>
+
+                    <h5 class="text-left margin-top-20">
+                        <a href="{{ h.url_for('pages.blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a>
+                    </h5>
                     <p class="text-left size-14">{{ h.markdown_extract(post.content) }}</p>
                     {% if post.publish_date %}
                     <ul class="text-left size-12 list-inline list-separator">

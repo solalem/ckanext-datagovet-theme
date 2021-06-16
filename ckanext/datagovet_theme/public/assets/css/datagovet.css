@@ -1826,3 +1826,9 @@ div.alert.bordered-top p {
 body {
     background: #d2d2d2 url("../../../base/images/bg.png") !important;
 }
+
+.search-container {
+    background: linear-gradient(-10deg, #4b97a8, #3c90e7, #3b67be, #0f47af);
+    background-size: 400% 400%;
+    
+}
