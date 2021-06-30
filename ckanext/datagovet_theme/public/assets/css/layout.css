@@ -80,8 +80,8 @@ body.bg-grey #wrapper {
 section {
 	display: block;
 	position: relative;
-	padding: 80px 0;
-	border-bottom:rgba(0,0,0,0.1) 1px solid;
+	padding: 20px 0;
+	/* border-bottom:rgba(0,0,0,0.1) 1px solid; */
 
 	-webkit-transition: all .400s;
 	   -moz-transition: all .400s;
@@ -2923,7 +2923,7 @@ section.dark.page-header ul.page-options a {
 		min-width:200px;
 		padding:0;
 
-		border-color: #1ABC9C #fff #fff;
+		border-color: #01e01c #fff #fff;
 
 		-webkit-transition: top .4s ease;
 			 -o-transition: top .4s ease;

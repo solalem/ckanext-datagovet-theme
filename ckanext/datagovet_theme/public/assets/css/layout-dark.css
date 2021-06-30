@@ -922,7 +922,7 @@ span.countTo {
 /**	[Shortcode] Buttons
 *************************************************** **/
 section .btn-default:hover {
-	color: #1ABC9C;
+	color: #01e01c;
 	background-color:rgba(0,0,0,0.3);
 }
 

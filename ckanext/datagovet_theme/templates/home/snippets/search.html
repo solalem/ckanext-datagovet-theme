@@ -3,12 +3,12 @@
 {% set placeholder = _('E.g. environment') %}
 
 <section class="search-container">
-        <div class="container">
+    <div class="container">
 
         <header class="text-center margin-bottom-40">
-            <h1 class="weight-300" style="color:#f5f5f5">{% trans %}Start searching in DATA.GOV.ET{% endtrans %}</h1>
+            <h1 class="weight-300" style="color:#f5f5f5">{% trans %}Start searching in ADDIS.DATA.GOV.ET{% endtrans %}</h1>
             
-            <h2 class="weight-300 letter-spacing-1 size-13"><span>{% trans %}Search in more than 1700 datasets{% endtrans %}</span></h2>
+            <!-- <h2 class="weight-300 letter-spacing-1 size-13"><span>{% trans %}Search in more than 1700 datasets{% endtrans %}</span></h2> -->
         </header>
 
         <form class="clearfix well well-sm search-big nomargin" method="get" action="{% url_for controller='dataset', action='search' %}">
@@ -58,7 +58,7 @@
         </form>
         
         <!-- TAGS -->
-        <div class="margin-top-10">
+        <div class="margin-top-10 margin-left-10">
             {% for tag in tags %}
             <a class="tag_under_search" href="{% url_for controller='dataset', action='search', tags=tag.name %}">
                 <span class="txt">{{ h.truncate(tag.display_name, 22) }}</span>

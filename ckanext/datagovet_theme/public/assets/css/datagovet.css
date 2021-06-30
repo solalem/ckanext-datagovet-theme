@@ -566,18 +566,18 @@ a.tag:hover {
 
 
 .site-footer {
-    background: #212121;
-    border-top: 6px solid #1E5EA9;
+    background: #82ff91;
+    border-top: 4px solid #0a94e6;
 }
 
 .site-footer,
 .site-footer label,
 .site-footer small {
-    color: #959595;
+    color: #0076bd;
 }
 
 .site-footer a {
-    color: #CCC;
+    color: #0076bd;
 }
 
 .resource-item .heading {
@@ -1828,11 +1828,16 @@ body {
 }
 
 .search-container {
-    background: linear-gradient(-10deg, #4b97a8, #3c90e7, #3b67be, #0f47af);
+    background: linear-gradient(-10deg, #1cd210, #13e0a7, #3ba0be, #0076bd);
     background-size: 400% 400%;
     
 }
 
 .dataset-item {
     margin: 20px;
+}
+
+.well {
+    background-color: transparent;
+    border: transparent;
 }
