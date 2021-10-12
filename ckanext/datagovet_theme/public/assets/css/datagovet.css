@@ -12,13 +12,11 @@
 
 body {
     background: #FFF;
-    /* font-family: 'Museo Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-     */
-    font-family: 'Montserrat', 'Titillium Web', sans-serif;
+    /* font-family: 'Museo Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+    /* font-family: 'Montserrat', 'Titillium Web', sans-serif; */
     /* font-family: 'Nunito', sans-serif; */
-    /* font-family: 'Titillium Web', sans-serif; */
+    font-family: 'Titillium Web', sans-serif;
     font-size: 15px;
-    font-weight: 100;
 }
 
 a {
@@ -31,7 +29,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Montserrat', 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', 'Montserrat', sans-serif;
 }
 
 h1, .h1, h2, .h2, h3, .h3 {
@@ -1840,4 +1838,21 @@ body {
 .well {
     background-color: transparent;
     border: transparent;
+}
+
+/* Header override */
+#topNav button.btn-mobile {
+    float: right;
+    margin-top: 13px;
+}
+#header ul.nav-second-main {
+    margin-top: 39px;
+}
+#header ul.nav-second-main li {
+    padding: 0 5px 0px 5px;
+}
+#topBar {
+    display: block;
+    background-color: #fff;
+    border-bottom: rgba(0,0,0,0.05) 1px solid;
 }
