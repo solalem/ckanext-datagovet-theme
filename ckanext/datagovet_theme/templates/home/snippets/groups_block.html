@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-1 col-xs-3">
             </div>
-            {% for group in h.datagovet_theme_most_popular_groups(10) %}
+            {% for group in h.datagovet_theme_most_popular_groups() %}
             <div class="col-md-1 col-xs-3">
                 <div class="image">
                     <a href="{{ group.url }}">
