@@ -27,8 +27,8 @@ def most_popular_groups():
     groups = toolkit.get_action('group_list')(
         data_dict={'sort': 'package_count desc', 'all_fields': True})
 
-    # Truncate the list to the 20 most popular groups only.
-    groups = groups[:20]
+    # Truncate the list to the 10 most popular groups only.
+    groups = groups[:10]
 
     return groups
 
