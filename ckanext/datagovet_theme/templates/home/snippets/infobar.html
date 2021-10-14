@@ -1,67 +1,69 @@
 {% set stats = h.get_site_statistics() %}
 <!-- /INFO BAR -->
 <section class="info-bar">
-    <header class="text-center margin-bottom-40">
-        <h1 class="weight-300">DATA.GOV.ET</h1>
-        <h2 class="weight-300 letter-spacing-1 size-13"><span>{% trans %}OPEN DATASETS PORTAL{% endtrans %}</span>
-        </h2>
-    </header>
+    <div class="container">
+        <header class="text-center margin-bottom-40">
+            <h1 class="weight-300">DATA.GOV.ET</h1>
+            <h2 class="weight-300 letter-spacing-1 size-13"><span>{% trans %}OPEN DATASETS PORTAL{% endtrans %}</span>
+            </h2>
+        </header>
 
-    <div class="text-center">
-        <p class="lead size-16">
-            {% trans %}Central access point for open data sets delivered by public administration authorities and institutions, helping the public to find, download and use the information generated and held by the administrative structures.{% endtrans %}
-        </p>
-    </div>
-    
-    <div class="row">
-
-        <div class="col-md-3 col-sm-6">
-            <div class="col-md-6 col-sm-12">
-                <h2 class="icon ico-category fa fa-copy" style="color:#59BA41"></h2>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <span class="countTo" data-speed="3000">{{ stats.dataset_count }}</span>
-                <p>
-                    {{ _('Datasets') }}
-                </p>
-            </div>
+        <div class="text-center">
+            <p class="lead size-16">
+                {% trans %}Central access point for open data sets delivered by public administration authorities and institutions, helping the public to find, download and use the information generated and held by the administrative structures.{% endtrans %}
+            </p>
         </div>
+        
+        <div class="row">
 
-        <div class="col-md-3 col-sm-6">
-            <div class="col-md-6 col-sm-12">
-                <h2 class="icon ico-category fa fa-building-o" style="color:#C02942"></h2>
+            <div class="col-md-3 col-sm-6">
+                <div class="col-md-6 col-sm-12">
+                    <h2 class="icon ico-category fa fa-copy" style="color:#59BA41"></h2>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <span class="countTo" data-speed="3000">{{ stats.dataset_count }}</span>
+                    <p>
+                        {{ _('Datasets') }}
+                    </p>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-12">
-                <span class="countTo" data-speed="3000">{{ h.SI_number_span(stats.organization_count) }}</span>
-                <p>
-                    {{ _('Organizations') }}
-                </p>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="col-md-6 col-sm-12">
+                    <h2 class="icon ico-category fa fa-building-o" style="color:#C02942"></h2>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <span class="countTo" data-speed="3000">{{ h.SI_number_span(stats.organization_count) }}</span>
+                    <p>
+                        {{ _('Organizations') }}
+                    </p>
+                </div>
             </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="col-md-6 col-sm-12">
+                    <h2 class="icon ico-category fa fa-object-group" style="color:#C02942"></h2>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <span class="countTo" data-speed="3000">{{ h.SI_number_span(stats.group_count) }}</span>
+                    <p>
+                        {{ _('Groups') }}
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="col-md-6 col-sm-12">
+                    <h2 class="icon ico-category et-global" style="color:#1693A5"></h2>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <span class="countTo" data-speed="3000">{{ h.get_number_of_external_links() }}</span>
+                    <p>
+                        {{ _('external links') }}
+                    </p>
+                </div>
+            </div>
+
         </div>
-
-        <div class="col-md-3 col-sm-6">
-            <div class="col-md-6 col-sm-12">
-                <h2 class="icon ico-category fa fa-object-group" style="color:#C02942"></h2>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <span class="countTo" data-speed="3000">{{ h.SI_number_span(stats.group_count) }}</span>
-                <p>
-                    {{ _('Groups') }}
-                </p>
-            </div>
-        </div>
-
-        <div class="col-md-3 col-sm-6">
-            <div class="col-md-6 col-sm-12">
-                <h2 class="icon ico-category et-global" style="color:#1693A5"></h2>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <span class="countTo" data-speed="3000">{{ h.get_number_of_external_links() }}</span>
-                <p>
-                    {{ _('external links') }}
-                </p>
-            </div>
-        </div>
-
     </div>
 </section>
