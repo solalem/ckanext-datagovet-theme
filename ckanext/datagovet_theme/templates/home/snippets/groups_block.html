@@ -5,7 +5,7 @@
             <div class="featured-boxes featured-boxes-modern-style-2 featured-boxes-modern-style-2-hover-only featured-boxes-modern-style-primary my-4">
                 <div class="featured-box">
                     <div class="box-content px-lg-4 px-xl-5 py-lg-3">
-                        <img src="{{ group.image_display_url or h.url_for_static('/base/images/placeholder-group.png') }}" class="icon-featured text-color-dark" width="50" height="50" alt="{{ group.name }}" />
+                        <img src="{{ group.image_display_url or h.url_for_static('/assets/images/No-image-available.png') }}" class="icon-featured text-color-dark" width="50" height="50" alt="{{ group.name }}" />
                         <h2 class="font-weight-normal text-5"><strong class="font-weight-extra-bold"><a href="{{ group.url }}" class="text-decoration-none text-color-hover-secondary">{{ group.display_name.split(' ', 1)[0].replace(",", "") | upper }}</a></strong></h2>
                     </div>
                 </div>

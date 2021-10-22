@@ -23,7 +23,7 @@
                         </span>
                     </div>
                     {% endif %}
-                    <img class="img-fluid" src="{{ post.image or assets/images/No-image-available.png}}" alt="No Image" />
+                    <img class="img-fluid" src="{{ post.image or h.url_for_static('/assets/images/No-image-available.png') }}" alt="No Image" />
                 </div>
                 <div class="card-body py-4 px-0">
                     <h3 class="text-transform-none font-weight-bold text-5 text-color-hover-primary mb-2">{{ post.title or post.name }}</h3>
