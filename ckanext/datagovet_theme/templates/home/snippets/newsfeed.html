@@ -17,7 +17,7 @@
                     <div class="position-absolute bottom-10 right-0 d-flex justify-content-end w-100 py-3 px-4 z-index-3">
                         <span class="text-center bg-primary text-color-light font-weight-semibold text-5-5 line-height-2 px-3 py-2">
                             <span class="position-relative z-index-2">
-                                {{ h.render_day(post.publish_date) }}
+                                {{ h.render_datetime(post.publish_date, 'dddd, mmm dd') }}
                                 <span class="d-block custom-font-size-1 positive-ls-2 px-1">{{ h.render_date(post.publish_date) }}</span>
                             </span>
                         </span>
