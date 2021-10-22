@@ -23,7 +23,11 @@
                         </span>
                     </div>
                     {% endif %}
-                    <img src="{{ post.image ? post.image : assets/images/No-image-available.png}}" class="img-fluid" alt="Lorem Ipsum Dolor" />
+                    {% if post.image %}
+                    <img class="img-fluid" src="{{ post.image }}" alt="" />
+                    {% else %}
+                    <img class="img-fluid" src="assets/images/No-image-available.png" alt="No Image" />
+                    {% endif %}
                 </div>
                 <div class="card-body py-4 px-0">
                     <h3 class="text-transform-none font-weight-bold text-5 text-color-hover-primary mb-2">{{ post.title or post.name }}</h3>
