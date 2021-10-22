@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="238" height="231" viewBox="0 0 238 231">
+  <g id="Ethiopian_Industry_" data-name="Ethiopian Industry " transform="translate(-968 -5056)">
+    <g id="Group_166" data-name="Group 166" transform="translate(-199 1478)">
+      <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(1167 3578)" fill="none" stroke="#000" stroke-width="7">
+        <rect width="238" height="231" rx="115.5" stroke="none"/>
+        <rect x="3.5" y="3.5" width="231" height="224" rx="112" fill="none"/>
+      </g>
+    </g>
+    <g id="factory" transform="translate(1007.79 5098.489)">
+      <g id="Group_169" data-name="Group 169" transform="translate(16 0)">
+        <g id="Group_168" data-name="Group 168" transform="translate(0 0)">
+          <path id="Path_153" data-name="Path 153" d="M135.046,56.058a2.145,2.145,0,0,0-2.128-.026l-5.9,3.279L125.38,2.085A2.145,2.145,0,0,0,123.235,0H108.222a2.145,2.145,0,0,0-2.145,2.085l-2,69.977L97.5,75.708v-17.8a2.145,2.145,0,0,0-3.185-1.874L58.894,75.708v-17.8a2.145,2.145,0,0,0-3.185-1.874L17.1,77.48A2.144,2.144,0,0,0,16,79.354v47.183a2.145,2.145,0,0,0,2.145,2.145H133.959a2.145,2.145,0,0,0,2.145-2.145V57.907A2.145,2.145,0,0,0,135.046,56.058ZM110.307,4.289H121.15l.124,4.289h-11.09Zm-.247,8.579H121.4l1.394,48.79L108.437,69.63ZM73.907,124.393H61.039V113.669H73.907Zm17.158,0H78.2V113.669H91.065Zm40.749,0H95.354V111.525a2.145,2.145,0,0,0-2.145-2.145H58.894a2.145,2.145,0,0,0-2.145,2.145v12.868H20.289V80.617L54.6,61.553v17.8a2.145,2.145,0,0,0,3.185,1.874l35.42-19.675v17.8a2.145,2.145,0,0,0,3.185,1.874l20.227-11.236,9.4-5.222,5.791-3.217Z" transform="translate(-16 0)"/>
+        </g>
+      </g>
+      <g id="Group_171" data-name="Group 171" transform="translate(26.724 85.788)">
+        <g id="Group_170" data-name="Group 170">
+          <path id="Path_154" data-name="Path 154" d="M75.3,320H58.145A2.145,2.145,0,0,0,56,322.145v8.579a2.145,2.145,0,0,0,2.145,2.145H75.3a2.145,2.145,0,0,0,2.145-2.145v-8.579A2.145,2.145,0,0,0,75.3,320Zm-2.145,8.579H60.289v-4.289H73.158Z" transform="translate(-56 -320)"/>
+        </g>
+      </g>
+      <g id="Group_173" data-name="Group 173" transform="translate(65.328 85.788)">
+        <g id="Group_172" data-name="Group 172" transform="translate(0)">
+          <path id="Path_155" data-name="Path 155" d="M219.3,320H202.145A2.145,2.145,0,0,0,200,322.145v8.579a2.145,2.145,0,0,0,2.145,2.145H219.3a2.145,2.145,0,0,0,2.145-2.145v-8.579A2.145,2.145,0,0,0,219.3,320Zm-2.145,8.579H204.289v-4.289h12.868Z" transform="translate(-200 -320)"/>
+        </g>
+      </g>
+      <g id="Group_175" data-name="Group 175" transform="translate(103.933 85.788)">
+        <g id="Group_174" data-name="Group 174">
+          <path id="Path_156" data-name="Path 156" d="M363.3,320H346.145A2.145,2.145,0,0,0,344,322.145v8.579a2.145,2.145,0,0,0,2.145,2.145H363.3a2.145,2.145,0,0,0,2.145-2.145v-8.579A2.145,2.145,0,0,0,363.3,320Zm-2.145,8.579H348.289v-4.289h12.868Z" transform="translate(-344 -320)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

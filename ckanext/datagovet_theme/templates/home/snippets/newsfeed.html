@@ -29,7 +29,7 @@
                     <p class="mb-2">{{ h.markdown_extract(post.content) }} </p>
                     <span class="custom-view-more d-inline-flex font-weight-medium text-color-primary">
                         View More
-                        <img width="27" height="27" src="images/arrow-right.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary ms-2'}" style="width: 27px;" />
+                        <img width="27" height="27" src="{{ h.url_for_static('/assets/images/arrow-right.svg') }}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary ms-2'}" style="width: 27px;" />
                     </span>
                 </div>
             </div>
