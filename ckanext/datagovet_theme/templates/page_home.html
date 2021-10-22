@@ -40,7 +40,6 @@
         <div class="row">
             {% block main_content %}
             {% block flash %}
-            {% block flash %}
             <div class="flash-messages">
                 {% block flash_inner %}
                 {% for message in h.flash.pop_messages() | list %}
