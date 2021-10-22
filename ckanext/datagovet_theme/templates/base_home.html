@@ -84,37 +84,50 @@
   {# Allows custom attributes to be added to the <body> tag #}
   <body data-plugin-page-transition {% block bodytag %} data-site-root="{{ h.url_for('/', locale='default', qualified=true) }}"
     data-locale-root="{{ h.url_for('/', qualified=true) }}" {% endblock %}>
-    <div class="body">
-    {#
-    The page block allows you to add content to the page. Most of the time it is
-    recommended that you extend one of the page.html templates in order to get
-    the site header and footer. If you need a clean page then this is the
-    block to use.
+      <div class="body">
+          {#
+          The page block allows you to add content to the page. Most of the time it is
+          recommended that you extend one of the page.html templates in order to get
+          the site header and footer. If you need a clean page then this is the
+          block to use.
 
-    Example:
+          Example:
 
-      {% block page %}
-        <div>Some other page content</div>
-      {% endblock %}
-    #}
-    {%- block page %}{% endblock -%}
+          {% block page %}
+          <div>Some other page content</div>
+          {% endblock %}
+          #}
+          {%- block page %}{% endblock -%}
 
-    {#
-    DO NOT USE THIS BLOCK FOR ADDING SCRIPTS
-    Scripts should be loaded by the {% resource %} tag except in very special
-    circumstances
-    #}
-    {%- block scripts %}
-    <script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
-    <!-- <script type="text/javascript" src="/assets/plugins/jquery/jquery-2.2.3.min.js"></script>    
-    <script type="text/javascript" src="/assets/js/scripts.js"></script> -->
-    {% endblock -%}
+          {#
+          DO NOT USE THIS BLOCK FOR ADDING SCRIPTS
+          Scripts should be loaded by the {% resource %} tag except in very special
+          circumstances
+          #}
+          {%- block scripts %}
+          <script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+          <!-- <script type="text/javascript" src="/assets/plugins/jquery/jquery-2.2.3.min.js"></script>
+          <script type="text/javascript" src="/assets/js/scripts.js"></script> -->
+          <script src="/assets/plugins/jquery/jquery.min.js"></script>
+          <script src="/assets/plugins/jquery.appear/jquery.appear.min.js"></script>
+          <script src="/assets/plugins/jquery.easing/jquery.easing.min.js"></script>
+          <script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+          <script src="/assets/plugins/lazysizes/lazysizes.min.js"></script>
+          <script src="/assets/plugins/isotope/jquery.isotope.min.js"></script>
+          <script src="/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
+          <script src="/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+          <script src="/assets/js/theme.js"></script>
+          <script src="/assets/plugins/circle-flip-slideshow/js/jquery.flipshow.min.js"></script>
+          <script src="/assets/js/views/view.home.js"></script>
+          <script src="/assets/js/custom.js"></script>
+          <script src="/assets/js/theme.init.js"></script>
+          {% endblock -%}
 
-    {% block body_extras -%}
-    {# defined in the config.ini under "ckan.template_footer_end" #}
-    {{ g.template_footer_end | safe }}
-    {%- endblock %}
-    </div>
+          {% block body_extras -%}
+          {# defined in the config.ini under "ckan.template_footer_end" #}
+          {{ g.template_footer_end | safe }}
+          {%- endblock %}
+      </div>
   </body>
 
 </html>
