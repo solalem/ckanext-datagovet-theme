@@ -2,72 +2,45 @@
 {% set tags = h.get_facet_items_dict('tags', limit=5) %}
 {% set placeholder = _('E.g. environment') %}
 
-<section class="search-container">
-    <div class="container">
-
-        <header class="text-center margin-bottom-40">
-            <h1 class="weight-300" style="color:#f5f5f5">{% trans %}Start searching in DATA.GOV.ET{% endtrans %}</h1>
-            
-            <!-- <h2 class="weight-300 letter-spacing-1 size-13"><span>{% trans %}Search in more than 1700 datasets{% endtrans %}</span></h2> -->
-        </header>
-
-        <form class="clearfix well well-sm search-big nomargin" method="get" action="{% url_for controller='dataset', action='search' %}">
-            <!-- <h3 class="heading">{{ _("Search data") }}</h3> -->
-
-            <!-- <div class="search-input form-group search-giant">
-                <input aria-label="{% block header_site_search_label %}{{ _('Search datasets') }}{% endblock %}" id="field-main-search" type="text" class="form-control" name="q" value="" autocomplete="off" placeholder="{% block search_placeholder %}{{ placeholder }}{% endblock %}" />
-                <button type="submit">
-                    <i class="fa fa-search"></i>
-                    <span class="sr-only">{{ _('Search') }}</span>
-                </button>
-            </div> -->
-
-            <div class="input-group">
-            
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-default input-lg dropdown-toggle noborder-right" data-toggle="dropdown">
-                        {% trans %}All Domains{% endtrans %} <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li class="active">
-                            <a href="#"><i class="fa fa-check"></i> {% trans %}All Domains{% endtrans %}</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="/group/finance">Economy & Finance</a>
-                        </li>
-                        <li>
-                            <a href="/group/agriculture">Agriculture</a>
-                        </li>
-                        <li>
-                            <a href="/group/justice">Justice</a>
-                        </li>
-                        <li>
-                            <a href="/group/transport">Transport</a>
-                        </li>
-                    </ul>
-                </div>
-            
-                <input name="q" id="field-main-search" class="form-control input-lg" type="text" placeholder="{% trans %}Search in all datasets ...{% endtrans %}">
-                <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default input-lg noborder-left">
-                        <i class="fa fa-search fa-lg nopadding"></i>
-                    </button>
+<div class="owl-carousel-wrapper" style="height: 350px;">
+    <div class="owl-carousel dots-inside dots-horizontal-center show-dots-hover show-dots-xs show-dots-sm show-dots-md nav-style-1 nav-inside nav-inside-plus nav-light nav-lg nav-font-size-lg show-nav-hover mb-0" data-plugin-options="{'responsive': {'0': {'items': 1, 'dots': true, 'nav': false}, '479': {'items': 1, 'dots': true}, '768': {'items': 1, 'dots': true}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': false, 'autoHeight': false, 'margin': 0, 'dots': false, 'dotsVerticalOffset': '-235px', 'nav': true, 'navVerticalOffset': '70px', 'animateIn': 'fadeIn', 'animateOut': 'fadeOut', 'mouseDrag': false, 'touchDrag': false, 'pullDrag': false, 'autoplay': true, 'autoplayTimeout': 9000, 'autoplayHoverPause': true, 'rewind': true}">
+        <div class="position-relative bg-primary overflow-hidden pt-4" data-dynamic-height="['350px','350px','350px','350px','350px']" style="height: 350px;">
+            <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show ></div>
+            <div class="container position-relative z-index-3 pb-5 h-100">
+                <div class="row justify-content-center align-items-center pb-5 h-100">
+                    <div class="col-lg-8 text-center pb-5 mb-5">
+                        <h1 class="text-color-light font-weight-bold line-height-1 text-12 text-md-14 positive-ls-3 mb-3 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}">Open Data</h12>
+                        <h2 class="alternative-font-4 text-color-light font-weight-semibold line-height-3 text-5 positive-ls-1 mb-2 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="1300" data-plugin-options="{'minWindowWidth': 0}"><span class="opacity-9">Explore the Open Data Portal</span></h2>
+                        <form action="{% url_for controller='dataset', action='search' %}" method="post" id="domainSearchForm" class="form-errors-light mt-5">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input-group">
+                                        <input type="text" id="field-main-search" name="q" class="form-control form-control-lg form-control-focused border-top-0 border-bottom-0 border-start-0" aria-label="..." placeholder="{% trans %}Search in all datasets ...{% endtrans %}" required data-msg-required="Please enter search term.">
+                                        <input type="hidden" name="tld" value="All">
+                                        <div class="input-group-btn align-items-stretch">
+                                            <button class="btn btn-lg btn-secondary mt-4" type="submit">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </form>
-        
-        <!-- TAGS -->
-        <div class="margin-top-10 margin-left-10">
-            {% for tag in tags %}
-            <a class="tag_under_search" href="{% url_for controller='dataset', action='search', tags=tag.name %}">
-                <span class="txt">{{ h.truncate(tag.display_name, 22) }}</span>
-                <span class="num">{{ tag.count }}</span>
-            </a>
-            {% endfor %}
         </div>
-
-
     </div>
-</section>
-<!-- /TAGS -->
+    <section class="section border-0 mt-0 mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col pt-2 text-center text-lg-start text-center">
+                    <h3 class="text-3 text-dark m-0 font-weight-bold d-inline-block pe-4 mb-3">TRENDING TAGS:</h3>
+                    <div class="d-inline-block">
+                        {% for tag in tags %}
+                        <a href="{% url_for controller='dataset', action='search', tags=tag.name %}" class="btn py-3 px-4 text-1 text-dark btn-light bg-transparent text-uppercase font-weight-bold me-2 mb-2">{{ h.truncate(tag.display_name, 22) }} <span class="badge badge-dark bg-color-primary badge-sm text-uppercase">{{ tag.count }}</span></a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

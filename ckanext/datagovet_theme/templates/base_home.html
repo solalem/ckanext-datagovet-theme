@@ -7,10 +7,7 @@
 {# Allows custom attributes to be added to the <html> tag #}
 {%- block htmltag -%}
 {% set lang = h.lang() %}
-<!--[if IE 9]> <html lang="{{ lang }}" class="ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html lang="{{ lang }}">
-<!--<![endif]-->
 {%- endblock -%}
 
 {# Allows custom attributes to be added to the <head> tag #}
@@ -32,7 +29,7 @@
   {% block meta_generator %}
   <meta name="generator" content="ckan {{ h.ckan_version() }}" />{% endblock %}
   {% block meta_viewport %}
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock %}
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">{% endblock %}
   {%- endblock -%}
 
   {#
@@ -74,19 +71,7 @@
   {%- block styles %}
     {{ super() }}
     {% asset g.main_css[6:] %}
-    <!-- <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700"
-    rel="stylesheet" type="text/css" /> -->
-    <!-- <link rel="stylesheet" href="/assets/css/mycss.css" />
-    <link rel="stylesheet" href="/assets/css/datagovet_theme.css" />  -->
-    <!-- REVOLUTION SLIDER -->
-    <!-- <link href="/assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />   -->
-    <!-- THEME CSS -->
-    <!-- <link href="/assets/css/essentials.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/css/layout.css" rel="stylesheet" type="text/css" />   -->
-    <!-- PAGE LEVEL SCRIPTS -->
-    <!-- <link href="/assets/css/color_scheme/darkblue.css" rel="stylesheet" type="text/css" id="color_scheme" /> -->
+   
   {% endblock %}
 
   {% block head_extras %}
@@ -97,9 +82,9 @@
   </head>
 
   {# Allows custom attributes to be added to the <body> tag #}
-  <body class="smoothscroll enable-animation" {% block bodytag %} data-site-root="{{ h.url_for('/', locale='default', qualified=true) }}"
+  <body data-plugin-page-transition {% block bodytag %} data-site-root="{{ h.url_for('/', locale='default', qualified=true) }}"
     data-locale-root="{{ h.url_for('/', qualified=true) }}" {% endblock %}>
-    <div id="wrapper">
+    <div class="body">
     {#
     The page block allows you to add content to the page. Most of the time it is
     recommended that you extend one of the page.html templates in order to get
@@ -121,8 +106,8 @@
     #}
     {%- block scripts %}
     <script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
-    <script type="text/javascript" src="/assets/plugins/jquery/jquery-2.2.3.min.js"></script>    
-    <script type="text/javascript" src="/assets/js/scripts.js"></script>
+    <!-- <script type="text/javascript" src="/assets/plugins/jquery/jquery-2.2.3.min.js"></script>    
+    <script type="text/javascript" src="/assets/js/scripts.js"></script> -->
     {% endblock -%}
 
     {% block body_extras -%}

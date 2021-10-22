@@ -1,47 +1,41 @@
-{# 
-    
-    Display last 4 news 
-
-#}
-
 {% set posts = h.get_recent_blog_posts(number=4) %}
 
-<!-- ARTICLES -->
-<section class="alternate padding-xs">
-    <div class="container">
-        <header class="text-center margin-bottom-40">
-            <h1 class="weight-300">News</h1>
-        </header>
-        <div class="row">
-            {% for post in posts %}
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail img-hover">
-
-                    <a href="{{ h.url_for('pages.blog_show', page='/' + post.name) }}">
-                        {% if post.image %}
-                        <img class="img-responsive" src="{{ post.image }}" alt="" />
-                        {% else %}
-                        <img class="img-responsive" src="assets/images/No-image-available.png" alt="" />
-                        {% endif %}
-                    </a>
-
-                    <h5 class="text-left margin-top-20">
-                        <a href="{{ h.url_for('pages.blog_show', page='/' + post.name) }}">{{ post.title or post.name }}</a>
-                    </h5>
-                    <p class="text-left size-14">{{ h.markdown_extract(post.content) }}</p>
+<div class="container mt-5 pt-4 mb-5 mb-lg-4 mb-xl-0 pb-3 pb-xl-0">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-color-dark font-weight-bold text-7 line-height-1 mb-3-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="200">News</h2>
+            <p class="text-4 font-weight-light mb-5-5 appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="400">Recently published news. </p>
+        </div>
+    </div>
+    <div class="row row-gutter-sm justify-content-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600"></div>
+    {% for post in posts %}
+    <div class="col-sm-9 col-md-6 col-lg-4 mb-4 mb-lg-0">
+        <a href="{{ h.url_for('pages.blog_show', page='/' + post.name) }}" class="text-decoration-none" data-cursor-effect-hover="plus">
+            <div class="card border-0">
+                <div class="card-img-top position-relative overlay">
                     {% if post.publish_date %}
-                    <ul class="text-left size-12 list-inline list-separator">
-                        <li>
-                            <i class="fa fa-calendar"></i>
-                            {{ h.render_datetime(post.publish_date) }}
-                        </li>
-                    </ul>
+                    <div class="position-absolute bottom-10 right-0 d-flex justify-content-end w-100 py-3 px-4 z-index-3">
+                        <span class="text-center bg-primary text-color-light font-weight-semibold text-5-5 line-height-2 px-3 py-2">
+                            <span class="position-relative z-index-2">
+                                {{ h.render_day(post.publish_date) }}
+                                <span class="d-block custom-font-size-1 positive-ls-2 px-1">{{ h.render_date(post.publish_date) }}</span>
+                            </span>
+                        </span>
+                    </div>
                     {% endif %}
+                    <img src="{{ post.image ? post.image : assets/images/No-image-available.png}}" class="img-fluid" alt="Lorem Ipsum Dolor" />
+                </div>
+                <div class="card-body py-4 px-0">
+                    <h3 class="text-transform-none font-weight-bold text-5 text-color-hover-primary mb-2">{{ post.title or post.name }}</h3>
+                    <p class="mb-2">{{ h.markdown_extract(post.content) }} </p>
+                    <span class="custom-view-more d-inline-flex font-weight-medium text-color-primary">
+                        View More
+                        <img width="27" height="27" src="images/arrow-right.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary ms-2'}" style="width: 27px;" />
+                    </span>
                 </div>
             </div>
-            {% endfor %}
-        </div>
-
+        </a>
     </div>
-</section>
-<!-- /ARTICLES -->
+    {% endfor %}
+    </div>
+</div>

@@ -1,18 +1,3 @@
-{#
-Embeds a group within the sidebar of a page.
-
-group    - The group dict.
-truncate - A max length for the group description. If not provided the description
-           will be full length.
-
-Example:
-
-    {% snippet 'snippets/group, group=c.group_dict %}
-
-# Get a list of all the site's groups from CKAN, sorted by number of
-# datasets.
-#}
-
 {% set groups = toolkit.get_action('group_list')(data_dict={'sort': 'package_count desc', 'all_fields': True}) %}
 
 

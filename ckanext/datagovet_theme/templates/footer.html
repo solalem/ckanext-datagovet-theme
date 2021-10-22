@@ -1,28 +1,40 @@
 {% ckan_extends %}
 {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
 
-{% block footer_links_ckan %}
-<li><a href="/terms.html">{{ _('Terms and conditions') }}</a></li>
-<li><a href="{{ api_url }}">{{ _('CKAN API') }}</a></li>
-<li><a href="https://github.com/solalem/ckanext-datagovet-theme">{{ _('Open Source on Github') }}</a></li>
-<li><a href="/stats">{{ _('Statistics') }}</a></li>
-<li><a href="h.url_for('ga_index')">{{ _('Traffic Statistics') }}</a></li>
-<li><a href="https://www.data.gov.et/feeds/dataset.atom" target="_blank">Feeds</a></li>
-
-{% endblock %}
-
-{% block footer_attribution %}
-<div class="row">
-    <div class="col-sm-6">
-        <img src="/assets/images/mint_logo_small.png"/>
+<footer id="footer" class="footer-texts-more-lighten">
+    <div class="container py-5">
+        <div class="row py-4">
+            <div class="col-lg-3 mb-5 mb-lg-0">
+                <h5 class="text-transform-none font-weight-bold text-color-light text-5-5 mb-4">Open Government Data</h5>
+                <p class="text-3-5">About Open Government Data</p>
+                
+            </div>
+            <div class="col-lg-5 mb-5 mb-lg-0">
+                <h5 class="text-transform-none font-weight-bold text-color-light text-5-5 mb-4">Important Links</h5>
+                <ul class="list list-unstyled text-3-5 mb-0  columns-lg-2">
+                    {% block footer_links_ckan %}
+                    <li class="mb-2"><a href="/terms.html">{{ _('Terms and conditions') }}</a></li>
+                    <li class="mb-2"><a href="{{ api_url }}">{{ _('CKAN API') }}</a></li>
+                    <li class="mb-2"><a href="https://github.com/solalem/ckanext-datagovet-theme">{{ _('Open Source on Github') }</a></li>
+                    <li class="mb-2"><a href="/stats">{{ _('Statistics') }}</a></li>
+                    <li class="mb-2"><a href="h.url_for('ga_index')">{{ _('Traffic Statistics') }}</a></li>
+                    <li class="mb-2"><a href="https://www.data.gov.et/feeds/dataset.atom">{{ _('Feeds') }}</a></li>
+                    {% endblock %}
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                {% block footer_attribution %}
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/assets/images/mint_logo_small.png"/>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/assets/images/digital_ethiopia_logo_small.png"/>
+                    </div>
+                </div>
+                {% endblock %}
+            </div>
+        </div>
     </div>
-    <div class="col-sm-6">
-        <img src="/assets/images/digital_ethiopia_logo_small.png"/>
-    </div>
-</div>
-<p>{% trans %}<strong>Powered by</strong> <a class="hide-text ckan-footer-logo" href="https://ckan.org">CKAN</a>{% endtrans %}</p>
-{% endblock %}
-
-{% block footer_lang %}
-
-{% endblock %}
+    
+</footer>
