@@ -16,64 +16,34 @@
                 </div>
                 <div class="header-column justify-content-end">
                     {% block header_account %}
-                    <div class="header-row pt-3">
-                        <nav class="header-nav-top">
-                            <ul class="nav nav-pills">
-                                {% block header_account_container_content %}
-                                {% if c.userobj %}
-                                {% block header_account_logged %}
-                                {% if c.userobj.sysadmin %}
-                                <li class="nav-item nav-item-anim-icon nav-item-left-border-md-show">
-                                    <a class="nav-link ps-0 ws-nowrap"
-                                        href="{{ h.url_for(controller='admin', action='index') }}"
-                                        title="{{ _('Sysadmin settings') }}"><i class="fas fa-cog"></i>{{ _('Admin')
-                                        }}</a>
-                                </li>
-                                {% endif %}
-                                <li class="nav-item nav-item-anim-icon nav-item-left-border-md-show">
-                                    <a class="nav-link ps-0 ws-nowrap"
-                                        href="{{ h.url_for('user.read', id=c.userobj.name) }}"
-                                        title="{{ _('View profile') }}"><i class="fas fa-user"></i>{{
-                                        c.userobj.display_name }}</a>
-                                </li>
-                                {% set new_activities = h.new_activities() %}
-                                {% set notifications_tooltip = ngettext('Dashboard (%(num)d new item)', 'Dashboard
-                                (%(num)d new items)', new_activities)
-                                %}
-                                <li class="nav-item nav-item-anim-icon nav-item-left-border-md-show">
-                                    <a class="nav-link" href="{{ h.url_for('dashboard.index') }}"
-                                        title="{{ notifications_tooltip }}"><i class="fas fa-tachometer"></i>{{
-                                        _('Dashboard') }}<span class="badge badge-success">{{ new_activities
-                                            }}</span></a>
-                                </li>
-                                <li class="nav-item nav-item-anim-icon nav-item-left-border-md-show">
-                                    <a class="nav-link" href="{{ h.url_for('user.edit', id=c.userobj.name) }}"
-                                        title="{{ _('Edit settings') }}"><i class="fas fa-gears"></i>{{ _('Settings')
-                                        }}</a>
-                                </li>
-                                {% endblock %}
-                                {% block header_account_log_out_link %}
-                                <li class="nav-item nav-item-anim-icon nav-item-left-border-md-show">
-                                    <a class="nav-link" href="{{ h.url_for('/user/_logout') }}"
-                                        title="{{ _('Log out') }}"><i class="fas fa-power-off"></i> {{ _('Log out')
-                                        }}</a>
-                                </li>
-                                {% endblock %}
-                                {% else %}
-                                <li class="nav-item nav-item-anim-icon nav-item-left-border-md-show">
-                                    <a class="nav-link ps-0 ws-nowrap" href="{{ h.url_for('user.login') }}"><i
-                                            class="fas fa-angle-right"></i> {{ _('Login') }}</a>
-                                </li>
-                                {% if h.check_access('user_create') %}
-                                <li class="nav-item nav-item-anim-icon nav-item-left-border-md-show">
-                                    <a class="nav-link" href="{{ h.url_for('user.register') }}"><i
-                                            class="fas fa-angle-right"></i> {{ _('Register') }}</a>
-                                </li>
-                                {% endif %}
-                                {% endif %}
-                                {% endblock %}
-                                {% snippet "snippets/header_language_selector.html" %}
-                            </ul>
+                    <div class="header-row">
+                        <nav class="header-nav-top nav nav-pills">
+                            {% block header_account_container_content %}
+                            {% if c.userobj %}
+                            {% block header_account_logged %}
+                            {% if c.userobj.sysadmin %}
+                            <a class="nav-item nav-link ps-0 ws-nowrap" href="{{ h.url_for(controller='admin', action='index') }}"
+                                title="{{ _('Sysadmin settings') }}"><i class="fas fa-cog"></i>{{ _('Admin') }}</a>
+                            {% endif %}
+                            <a class="nav-item nav-link ps-0 ws-nowrap" href="{{ h.url_for('user.read', id=c.userobj.name) }}"
+                                title="{{ _('View profile') }}"><i class="fas fa-user"></i>{{ c.userobj.display_name }}</a>
+                            {% set new_activities = h.new_activities() %}
+                            {% set notifications_tooltip = ngettext('Dashboard (%(num)d new item)', 'Dashboard (%(num)d new items)', new_activities) %}
+                            <a class="nav-item nav-link ps-0 ws-nowrap" href="{{ h.url_for('dashboard.index') }}" title="{{ notifications_tooltip }}"><i class="fas fa-tachometer"></i>{{ _('Dashboard') }}<span class="badge badge-success">{{ new_activities }}</span></a>
+                            <a class="nav-item nav-link ps-0 ws-nowrap" href="{{ h.url_for('user.edit', id=c.userobj.name) }}" title="{{ _('Edit settings') }}"><i class="fas fa-gears"></i>{{ _('Settings') }}</a>
+                            {% endblock %}
+                            {% block header_account_log_out_link %}
+                            <a class="nav-item nav-link ps-0 ws-nowrap" href="{{ h.url_for('/user/_logout') }}" title="{{ _('Log out') }}"><i class="fas fa-power-off"></i> {{ _('Log out')}}</a>
+                            {% endblock %}
+                            {% else %}
+                            <a class="nav-item nav-link ps-0 ws-nowrap" href="{{ h.url_for('user.login') }}"><i class="fas fa-angle-right"></i> {{ _('Login') }}</a>
+                            {% if h.check_access('user_create') %}
+                            <a class="nav-item nav-link ps-0 ws-nowrap" href="{{ h.url_for('user.register') }}"><i class="fas fa-angle-right"></i> {{ _('Register') }}</a>
+                            {% endif %}
+                            {% endif %}
+                            {% endblock %}
+                            {% snippet "snippets/header_language_selector.html" %}
+                        
                         </nav>
                     </div>
                     {% endblock %}
