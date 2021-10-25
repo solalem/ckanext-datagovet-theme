@@ -1,6 +1,6 @@
 {% set current_lang = request.environ.CKAN_LANG %}
 
-<li class="nav-item dropdown nav-item-left-border nav-item-left-border-remove nav-item-left-border-md-show">
+<div class="nav-item dropdown nav-item-left-border nav-item-left-border-remove nav-item-left-border-md-show">
     <a class="nav-link" href="#" role="button" id="dropdownLanguage" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         {% for locale in h.get_available_locales() %}
     {% if locale.identifier == current_lang %}
@@ -11,7 +11,7 @@
     </a>
     <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
         {% for locale in h.get_available_locales() %}
-        <a class="dropdown-item" href="{% url_for h.current_url(), locale=locale.short_name %}"><img src="img/blank.gif" class="flag flag-{{ locale.short_name[0:2] }}" alt="{{ locale.display_name or locale.english_name }}" /> {{ locale.display_name or locale.english_name }}</a>
+        <a class="dropdown-item" href="{% url_for h.current_url(), locale=locale.short_name %}"><img src="{{ h.url_for_static('/assets/images/blank.gif') }}" class="flag flag-{{ locale.short_name[0:2] }}" alt="{{ locale.display_name or locale.english_name }}" /> {{ locale.display_name or locale.english_name }}</a>
         {% endfor %}
     </div>
 </li>
