@@ -9,18 +9,14 @@
             <div class="container position-relative z-index-3 pb-5 h-100">
                 <div class="row justify-content-center align-items-center pb-5 h-100">
                     <div class="col-lg-8 text-center pb-5 mb-5">
-                        <h1 class="text-color-light font-weight-bold line-height-1 text-12 text-md-14 positive-ls-3 mb-3 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}">Open Data</h12>
-                        <h2 class="alternative-font-4 text-color-light font-weight-semibold line-height-3 text-5 positive-ls-1 mb-2 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="1300" data-plugin-options="{'minWindowWidth': 0}"><span class="opacity-9">Explore the Open Data Portal</span></h2>
+                        <h1 class="text-color-light font-weight-bold line-height-1 text-12 text-md-14 positive-ls-3 mb-3" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}">Open Data</h12>
+                        <h2 class="alternative-font-4 text-color-light font-weight-semibold line-height-3 text-5 positive-ls-1 mb-2 " data-appear-animation="blurIn" data-appear-animation-delay="1300" data-plugin-options="{'minWindowWidth': 0}"><span class="opacity-9">Explore the Open Data Portal</span></h2>
                         <form action="{% url_for controller='dataset', action='search' %}" method="post" id="domainSearchForm" class="form-errors-light mt-5">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="input-group">
-                                        <input type="text" id="field-main-search" name="q" class="form-control form-control-lg form-control-focused border-top-0 border-bottom-0 border-start-0" aria-label="..." placeholder="{% trans %}Search in all datasets ...{% endtrans %}" required data-msg-required="Please enter search term.">
-                                        <input type="hidden" name="tld" value="All">
-                                        <div class="input-group-btn align-items-stretch">
-                                            <button class="btn btn-lg btn-secondary mt-4" type="submit">Search</button>
-                                        </div>
-                                    </div>
+                            <div class="col">
+                                <div class="input-group">
+                                    <input type="text" id="field-main-search" name="q" class="form-control form-control-lg form-control-focused border-top-0 border-bottom-0 border-start-0" aria-label="..." placeholder="{% trans %}Search in all datasets ...{% endtrans %}" required data-msg-required="Please enter search term.">
+                                    <input type="hidden" name="tld" value="All">
+                                    <button class="btn btn-lg btn-secondary mt-4" type="submit">Search</button>
                                 </div>
                             </div>
                         </form>
