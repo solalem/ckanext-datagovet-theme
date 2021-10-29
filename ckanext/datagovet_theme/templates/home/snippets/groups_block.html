@@ -2,15 +2,16 @@
     <div class="row justify-content-center">
         {% for group in h.datagovet_theme_most_popular_groups() %}
         <div class="col-sm-10 col-md-7 col-lg-3 mb-4 mb-lg-0">
-            <div class="featured-boxes featured-boxes-modern-style-2 featured-boxes-modern-style-2-hover-only featured-boxes-modern-style-primary my-4">
+            <div class="my-4">
                 <div class="featured-box">
                     <div class="box-content px-lg-4 px-xl-5 py-lg-3">
                         <img src="{{ group.image_display_url or h.url_for_static('/assets/images/No-image-available.png') }}" class="icon-featured text-color-dark" width="50" height="50" alt="{{ group.name }}" />
                         <h2 class="font-weight-normal text-5">
                             <strong class="font-weight-extra-bold">
                                 <a href="{{ group.url }}" class="text-decoration-none text-color-hover-secondary">
-                                    {{ group.display_name.split(' ', 1)[0].replace(",", "") | upper }}
+                                    {{ group.display_name | upper }}
                                 </a>
+                                <span class="badge badge-dark bg-color-primary badge-sm text-uppercase">{{ group.package_count }}</span>
                             </strong>
                         </h2>
                     </div>
