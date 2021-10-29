@@ -7,7 +7,7 @@
                     <div class="box-content px-lg-4 px-xl-5 py-lg-3">
                         <img src="{{ group.image_display_url or h.url_for_static('/assets/images/No-image-available.png') }}" class="icon-featured text-color-dark" width="50" height="50" alt="{{ group.name }}" />
                         <div class="text-5">
-                            <a href="{{ h.url_for(type ~ '.read', id=group.name) }}" class="text-decoration-none text-color-hover-secondary">
+                            <a href="{{ group.url }}" class="text-decoration-none text-color-hover-secondary">
                                 {{ group.display_name | upper }}
                             </a>
                             <span class="badge bg-color-primary">{{ group.package_count }}</span>
