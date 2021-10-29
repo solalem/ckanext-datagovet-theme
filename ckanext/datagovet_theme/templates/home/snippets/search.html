@@ -4,11 +4,11 @@
 
 <div class="owl-carousel-wrapper">
     <div class="dots-inside dots-horizontal-center show-dots-hover show-dots-xs show-dots-sm show-dots-md nav-style-1 nav-inside nav-inside-plus nav-light nav-lg nav-font-size-lg show-nav-hover mb-0" data-plugin-options="{'responsive': {'0': {'items': 1, 'dots': true, 'nav': false}, '479': {'items': 1, 'dots': true}, '768': {'items': 1, 'dots': true}, '979': {'items': 1}, '1199': {'items': 1}}, 'loop': false, 'autoHeight': false, 'margin': 0, 'dots': false, 'dotsVerticalOffset': '-235px', 'nav': true, 'navVerticalOffset': '70px', 'animateIn': 'fadeIn', 'animateOut': 'fadeOut', 'mouseDrag': false, 'touchDrag': false, 'pullDrag': false, 'autoplay': true, 'autoplayTimeout': 9000, 'autoplayHoverPause': true, 'rewind': true}">
-        <div class="position-relative bg-primary overflow-hidden pt-4" data-dynamic-height="['350px','350px','350px','350px','350px']" style="height: 350px;">
+        <div class="position-relative bg-primary overflow-hidden" data-dynamic-height="['350px','350px','350px','350px','350px']" style="height: 350px;">
             <div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0" data-appear-animation="kenBurnsToLeft" data-appear-animation-duration="30s" data-plugin-options="{'minWindowWidth': 0}" data-carousel-onchange-show ></div>
-            <div class="container position-relative z-index-3 pb-5 h-100">
-                <div class="row justify-content-center align-items-center pb-5 h-100">
-                    <div class="col-lg-8 text-center pb-5 mb-5">
+            <div class="container position-relative z-index-3 h-100">
+                <div class="row justify-content-center align-items-center h-100">
+                    <div class="col-lg-8 text-center">
                         <h1 class="text-color-light font-weight-bold line-height-1 text-12 text-md-14 positive-ls-3 mb-3" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}">Open Data</h12>
                         <h2 class="alternative-font-4 text-color-light font-weight-semibold line-height-3 text-5 positive-ls-1 mb-2 " data-appear-animation="blurIn" data-appear-animation-delay="1300" data-plugin-options="{'minWindowWidth': 0}"><span class="opacity-9">Explore the Open Data Portal</span></h2>
                         <form action="{% url_for controller='dataset', action='search' %}" method="post" id="domainSearchForm" class="form-errors-light mt-5">
