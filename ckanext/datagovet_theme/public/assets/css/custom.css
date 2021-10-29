@@ -1,3 +1,7 @@
 body {
     background: none !important;
 }
+
+.icon-featured {
+    background-color: #f0f0f0 !important;
+}
