@@ -15,7 +15,7 @@
                     {% if post.publish_date %}
                     <div class="position-absolute bottom-10 right-0 d-flex justify-content-end w-100 py-3 px-4 z-index-3">
                         <span class="text-center bg-primary text-color-light font-weight-semibold text-5-5 line-height-2 px-3 py-2">
-                            <span class="d-block custom-font-size-1 positive-ls-2 px-1">{{ h.render_datetime(post.publish_date, date_format='%M, %d') }}</span>
+                            <span class="d-block custom-font-size-1 positive-ls-2 px-1">{{ h.render_datetime(post.publish_date, date_format='%MMM, %d') }}</span>
                             <span class="d-block custom-font-size-1 positive-ls-2 px-1">{{ h.render_datetime(post.publish_date, date_format='%Y') }}</span>
                         </span>
                     </div>
